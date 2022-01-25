@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "formulahendry.auto-rename-tag",
+    "eamodio.gitlens",
+    "ritwickdey.liveserver",
+    "pkief.material-icon-theme",
+    "tabnine.tabnine-vscode",
+    "esbenp.prettier-vscode",
+    "whizkydee.material-palenight-theme"
+  ]
+}
