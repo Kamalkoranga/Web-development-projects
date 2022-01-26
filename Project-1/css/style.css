@@ -295,7 +295,6 @@ footer input:last-child {
   .container {
     width: 750px;
   }
-
 }
 
 @media (min-width: 992px) {
@@ -315,4 +314,54 @@ footer input:last-child {
     margin: 0 auto;
     padding: 10px;
   }
+}
+
+/* About */
+.hero-img {
+  margin-top: 8vh;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+.about {
+  margin-top: 8vh;
+  color: #555;
+  line-height: 1.8;
+}
+
+.about .container {
+  max-width: 800px;
+}
+
+.about .container h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 2vh;
+}
+
+.about .container p {
+  font-size: 15px;
+}
+
+.about .flex {
+  margin: 4vh 0;
+}
+
+.about .flex img {
+  width: 50%;
+}
+
+.about .signature {
+  font-family: La Belle Aurore, cursive;
+  font-size: 40px !important;
+  text-align: right;
+  margin: 4vh;
+}
+
+.footer {
+  margin-top: 8vh;
 }
