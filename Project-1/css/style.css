@@ -59,31 +59,38 @@ a {
   padding: 5px;
 }
 
-.navbar a:hover{
+.navbar a:hover {
   border-bottom: 1px solid #ccc;
   color: #000;
 }
 
-
 /* Showcase */
 
 header {
-  margin-top: 8vh;
-  height: 700px;
-  background-image: url("../img/img-home.png");
-  background-repeat: no-repeat;
+  height: auto;
+  background-image: url("../img/img-home.jpg");
+  position: relative;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 12% 0;
 }
 
-header .container {
-  position: relative;
+.bg {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
 }
 
 header .content {
-  position: absolute;
-  left: 0;
-  top: 225px;
-  color: rgb(255, 255, 255);
+  position: relative;
+  color: #fff;
+  max-width: 600px;
+  line-height: 1.8;
+  z-index: 22;
 }
 
 header .content h1 {
@@ -91,13 +98,12 @@ header .content h1 {
   font-weight: 700;
 }
 
-header .content p {
-  max-width: 600px;
-  line-height: 1.8;
-}
-
 header .content > * {
   margin: 30px 0;
+}
+
+header a {
+  cursor: pointer;
 }
 
 /* Sub Showcase */
@@ -203,6 +209,7 @@ header .content > * {
 
 .company .grid > *:first-child {
   grid-row: 1 / span 3;
+  align-self: center;
 }
 
 .company p {
@@ -227,7 +234,7 @@ header .content > * {
 
 footer {
   padding: 50px;
-  border-top: 1px solid rgba(204, 204, 204, 0.404);;
+  border-top: 1px solid rgba(204, 204, 204, 0.404);
 }
 
 footer .grid {
@@ -248,7 +255,7 @@ footer h2 {
 }
 
 footer p {
-  font-size:15px;
+  font-size: 15px;
   color: #555;
   line-height: 1.9;
 }
@@ -269,4 +276,43 @@ footer input:focus {
 
 footer input:last-child {
   margin-left: 0;
+}
+
+/* Media */
+
+@media (max-width: 768px) {
+  .sub-showcase .container {
+    padding: 10px;
+    display: block;
+  }
+
+  .sub-showcase .content > * {
+    max-width: 400px;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+
+  .sub-showcase .content:first-child {
+    grid-column: 1 / span 3;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+  }
 }
