@@ -365,3 +365,90 @@ footer input:last-child {
 .footer {
   margin-top: 8vh;
 }
+
+/* Pricing */
+
+.pricing {
+  margin-top: 8vh;
+}
+
+.pricing .flex {
+  gap: 30px;
+}
+
+.pricing .container .text {
+  padding: 100px 200px 50px 200px;
+}
+
+.pricing .text a {
+  display: block;
+  margin-top: 20px;
+}
+
+.pricing .table .item {
+  /* border: 1px solid rgba(204, 204, 204); */
+  border: none;
+}
+
+.pricing .table .item h1 {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.pricing .table .item strong {
+  font-size: 60px;
+  margin-right: 30px;
+}
+
+.pricing .table .item:nth-child(2) .top{
+  background-color: #3cbffa;
+}
+
+.pricing .table .item:last-child .top {
+  background-color: #1f2946;
+}
+
+.pricing .table .item li {
+  margin: 30px 0;
+  padding: 0 30px;
+  position: relative;
+}
+
+.pricing .top {
+  padding: 100px;
+  background-color: #4e74ff;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+
+.pricing .bottom {
+  background-color: #f5f5f5;
+  padding: 5%;
+  height: 500px;
+  position: relative;
+}
+
+.pricing .table .item .price {
+  font-size: 15px;
+}
+
+.pricing ul {
+  position: relative;
+}
+
+.pricing i {
+  margin-right: 20px;
+  position: absolute;
+  top: 20%;
+  left: 0;
+}
+
+.pricing a {
+  display:inline-block;
+  margin-top: 20%;
+  position: absolute;
+  bottom: 40px
+}
